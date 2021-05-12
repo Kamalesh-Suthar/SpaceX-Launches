@@ -1,0 +1,90 @@
+.MainDiv{
+    width: 14%;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+    padding: 12px;
+    height: fit-content;
+    margin: 12px auto;
+    position: relative;
+}
+.Filters{
+    /* background-color: coral; */
+    text-align: center;
+}
+.Filters > p{
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    width: 80%;
+    border-bottom: 1px solid #555;
+}
+.YearFilterDiv, .AdvancedFilters{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+/* .YearFilterDiv > p {
+    
+} */
+
+.YearFilterDiv p, .AdvancedFilters p{
+    color: #000;
+    background-color: #C5E09B;
+    display: inline-block;
+    padding: 4px 26px;
+    margin: 6px 0px;
+    border-radius: 4px;
+    cursor: pointer
+}
+.darkGreen{
+    background-color: #7CBA01 !important;
+}
+.disabled{
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+@media screen and (max-width: 768px) {
+    .MainDiv {
+        width: 95%;
+        height: fit-content;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin: 0 0 12px 0;
+    }
+
+    .Filters > p {
+        width: 100%;
+    }
+
+    .AdvancedFilters {
+        justify-content: space-around;
+    }
+
+    .AdvancedFilters p {
+        width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .MainDiv {
+        width: 100%;
+    }
+    .CommonHeadings {
+        width: 100% !important;
+    }
+
+    .Filters p {
+        margin: 3px 1px;
+        width: 23%;
+    }
+
+    .AdvancedFilters p {
+        width: 48%;
+    }
+}
